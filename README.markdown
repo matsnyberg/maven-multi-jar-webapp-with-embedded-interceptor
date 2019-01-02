@@ -132,6 +132,16 @@ I first experimented with presence and absence of the `beans.xml` file
 in the _application_ and _beans_ modules and was able to control
 whether the interceptor would work in each particular module that way.
 
+A reoccuring question on StackOverflow and other forums is "where do I
+put the `beans.xml` file?". Experimenting with this project I
+concluded that
+
+ - in a JAR archive, we put the `beans.xml` file in a `META-INF`
+   directory in the root of the archive,
+   
+ - in a WAR archive the `beans.xml` file goes into the `WEB-INF`
+   folder.
+
 
 
 Conclusion
